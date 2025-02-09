@@ -119,8 +119,8 @@ def run_app():
         unsafe_allow_html=True
     )
     
-    st.title("📊 YouTube Video Researcher")
-    st.subheader("Gain Deep Insights into Your Search Topic on YouTube")
+    st.title("📊 YouuTube Video Researcher")
+    st.subheader("Gain Deep Insights into Your Search Topic on YouuTube")
     
     st.sidebar.title("🔍 Research Input")
     topic = st.sidebar.text_input("Enter a topic to research")
