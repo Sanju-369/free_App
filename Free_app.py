@@ -97,8 +97,6 @@ def display_video_details(videos):
 
 # Main Streamlit App
 def run_app():
-    st.set_page_config(page_title="YouTube Video Researcher", layout="wide")
-    
     # Custom Background Color (Light Blue)
     st.markdown(
         """
