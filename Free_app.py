@@ -8,6 +8,17 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("YOUTUBE_API_KEY")
 
+# Set up page configuration for Secure App
+st.set_page_config(page_title="Secure App", page_icon="🔒", layout="wide")
+
+# Hide the default Streamlit menu, footer, and GitHub edit button
+st.markdown("""
+    <style>
+    #MainMenu, header, footer {visibility: hidden;}
+    [title="Edit source"] {display: none;}
+    </style>
+""", unsafe_allow_html=True)
+
 # Function to search YouTube
 def search_youtube_topic(topic, max_results):
     url = "https://www.googleapis.com/youtube/v3/search"
